@@ -51,8 +51,14 @@ namespace RepoLayer.Service
             return false;
         }
 
-        public string GetSimpleGreeting()
+        public string GetGreeting(User user)
         {
+            if (!string.IsNullOrEmpty(user.FirstName) && !string.IsNullOrEmpty(user.LastName))
+                return $"Hello {user.FirstName} {user.LastName}";
+            if (!string.IsNullOrEmpty(user.FirstName))
+                return $"Hello {user.FirstName}";
+            if (!string.IsNullOrEmpty(user.LastName))
+                return $"Hello {user.LastName}";
             return "Hello World";
         }
     }

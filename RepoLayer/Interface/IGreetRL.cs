@@ -9,12 +9,11 @@ namespace RepoLayer.Interface
 {
     public interface IGreetRL
     {
-        Greet AddGreet(Greet greet);
-        Greet GetGreetById(int id);
-        List<Greet> GetAllGreets();
-        Greet UpdateGreet(Greet greet);
-        bool DeleteGreet(int id);
-        string GetSimpleGreeting();
-
+        //Greet AddGreet(Greet greet);
+        //Greet GetGreetById(int id);
+        //List<Greet> GetAllGreets();
+        //Greet UpdateGreet(Greet greet);
+        //bool DeleteGreet(int id);
+        string GetGreeting(User user);
     }
 }
