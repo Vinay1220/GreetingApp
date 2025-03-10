@@ -50,5 +50,10 @@ namespace RepoLayer.Service
             }
             return false;
         }
+
+        public string GetSimpleGreeting()
+        {
+            return "Hello World";
+        }
     }
 }

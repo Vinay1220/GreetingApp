@@ -15,6 +15,13 @@ namespace WebApplication.Controllers
             _greetBL = greetBL;
         }
 
+        [HttpGet("simple")]
+        public IActionResult GetSimpleGreeting()
+        {
+            var message = _greetBL.GetSimpleGreeting();
+            return Ok(new ResponseModel<string> { Status = 200, Message = "Success", Data = message });
+        }
+
         [HttpPost]
         public IActionResult AddGreet([FromBody] Greet greet)
         {

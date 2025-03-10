@@ -23,5 +23,6 @@ namespace BusinessLayer.Service
         public List<Greet> GetAllGreets() => _greetRL.GetAllGreets();
         public Greet UpdateGreet(Greet greet) => _greetRL.UpdateGreet(greet);
         public bool DeleteGreet(int id) => _greetRL.DeleteGreet(id);
+        public string GetSimpleGreeting() => _greetRL.GetSimpleGreeting();
     }
 }

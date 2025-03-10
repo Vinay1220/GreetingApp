@@ -14,5 +14,7 @@ namespace BusinessLayer.Interface
         List<Greet> GetAllGreets();
         Greet UpdateGreet(Greet greet);
         bool DeleteGreet(int id);
+        string GetSimpleGreeting();
+
     }
 }
